@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "CryptoScanner.App/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CryptoScanner.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CryptoScanner.App.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CryptoScanner.App.dll": {}
+        }
+      },
+      "CryptoScanner.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CryptoScanner.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CryptoScanner.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CryptoScanner.App/1.0.0": {
+      "type": "project",
+      "path": "../CryptoScanner.App/CryptoScanner.App.csproj",
+      "msbuildProject": "../CryptoScanner.App/CryptoScanner.App.csproj"
+    },
+    "CryptoScanner.Data/1.0.0": {
+      "type": "project",
+      "path": "../CryptoScanner.Data/CryptoScanner.Data.csproj",
+      "msbuildProject": "../CryptoScanner.Data/CryptoScanner.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "CryptoScanner.App >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jespe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
+      "projectName": "CryptoScanner.UI",
+      "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
+      "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jespe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.App\\CryptoScanner.App.csproj": {
+              "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.App\\CryptoScanner.App.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
