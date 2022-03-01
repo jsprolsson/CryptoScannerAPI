@@ -7,12 +7,15 @@ namespace CryptoScanner.UI.Pages
 {
     public class IndexModel : PageModel
     {
-        public List<CryptoModel> CryptoModels { get; set; } = new();
+        public CryptoModel CryptoModels { get; set; } = new();
+        public List<CryptoModel> CryptoModelsList { get; set; } = new();
 
         public async Task OnGet()
         {
             ApiManager api = new();
-            CryptoModels = await api.GetCrypto();
+            CryptoModels = await api.GetCrypto("bitcoin");
+            CryptoModelsList = ApiManager.CryptoModels;
         }
+
     }
 }

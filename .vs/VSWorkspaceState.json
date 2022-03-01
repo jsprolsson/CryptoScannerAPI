@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CryptoScanner.App",
+    "\\CryptoScanner.App\\API",
     "\\CryptoScanner.Data",
     "\\CryptoScanner.Data\\Models"
   ],
-  "SelectedNode": "\\CryptoScanner.Data\\Models\\CryptoModel.cs",
+  "SelectedNode": "\\CryptoScanner.App\\API\\ApiManager.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -11,33 +11,33 @@ namespace CryptoScanner.App.API
 {
     public class ApiManager
     {
-        public static List<CryptoModel> CryptoModels { get; set; } = new();
+        public static CryptoModel CryptoModels { get; set; } = new();
 
-        public string baseUrl = "https://api.coingecko.com/api/v3/simple/price?ids=0x%2Cbitcoin%2Cdogecoin&vs_currencies=SEK";
+        public string baseUrl = "https://api.coingecko.com/api/v3";
 
-        public async Task<List<CryptoModel>> GetCrypto()
+        public async Task<CryptoModel> GetCrypto(string cryptoId)
         {
 
-            List<CryptoModel> cryptos = new();
+            CryptoModel cryptos = new();
+
+            string url = String.Concat(baseUrl, $"/simple/price?ids={cryptoId}&vs_currencies=SEK");
 
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders
                     .Accept
                     .Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    
 
-                using (var response = await httpClient.GetAsync(baseUrl))
+                using (var response = await httpClient.GetAsync(url))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    cryptos = JsonConvert.DeserializeObject<List<CryptoModel>>(apiResponse);
-
-                    return cryptos;
+                    cryptos = JsonConvert.DeserializeObject<CryptoModel>(apiResponse);
 
                 }
             }
 
-            return null;
+
+            return cryptos;
         }
     }
 }
