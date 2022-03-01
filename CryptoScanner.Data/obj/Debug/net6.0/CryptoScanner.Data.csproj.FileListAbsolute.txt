@@ -1,0 +1,12 @@
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\bin\Debug\net6.0\CryptoScanner.Data.deps.json
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\bin\Debug\net6.0\CryptoScanner.Data.dll
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\bin\Debug\net6.0\CryptoScanner.Data.pdb
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.csproj.AssemblyReference.cache
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.AssemblyInfoInputs.cache
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.AssemblyInfo.cs
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.csproj.CoreCompileInputs.cache
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.dll
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\refint\CryptoScanner.Data.dll
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\CryptoScanner.Data.pdb
+C:\Users\jespe\source\OOP2\CryptoScannerAPI\CryptoScanner.Data\obj\Debug\net6.0\ref\CryptoScanner.Data.dll

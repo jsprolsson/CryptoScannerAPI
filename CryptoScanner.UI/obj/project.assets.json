@@ -2,11 +2,21 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "CryptoScanner.App/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "CryptoScanner.Data": "1.0.0"
+          "CryptoScanner.Data": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/CryptoScanner.App.dll": {}
@@ -28,6 +38,33 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "CryptoScanner.App/1.0.0": {
       "type": "project",
       "path": "../CryptoScanner.App/CryptoScanner.App.csproj",
@@ -50,11 +87,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
+      "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
       "projectName": "CryptoScanner.UI",
-      "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
+      "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
       "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\obj\\",
+      "outputPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jespe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,8 +108,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.App\\CryptoScanner.App.csproj": {
-              "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.App\\CryptoScanner.App.csproj"
+            "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.App\\CryptoScanner.App.csproj": {
+              "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.App\\CryptoScanner.App.csproj"
             }
           }
         }

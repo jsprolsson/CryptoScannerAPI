@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PUt9U+x0D6WBvmfuy3eLhZ4D8WdpBhsPBXsFakRw1HA5Ysuhzi8Q3rxjKZ/hoSisL118hIvfzqT8MXQhzB5HvQ==",
+  "dgSpecHash": "3TKQYa5/qN/pG/BGeqd+8ruNc9lpplYX3US0jPRaPU1q+F1T+z/qqo+I2KXMyJXmCvLnp/Md/VPfYuqVzwGlfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.UI\\CryptoScanner.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jespe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

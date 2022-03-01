@@ -1,20 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using CryptoScanner.Data.Models;
+using CryptoScanner.App.API;
 
 namespace CryptoScanner.UI.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        public List<CryptoModel> CryptoModels { get; set; } = new();
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public async Task OnGet()
         {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-
+            ApiManager api = new();
+            CryptoModels = await api.GetCrypto();
         }
     }
 }

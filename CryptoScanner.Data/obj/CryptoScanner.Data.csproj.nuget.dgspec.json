@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.Data\\CryptoScanner.Data.csproj": {}
+    "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.Data\\CryptoScanner.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.Data\\CryptoScanner.Data.csproj": {
+    "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.Data\\CryptoScanner.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.Data\\CryptoScanner.Data.csproj",
+        "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.Data\\CryptoScanner.Data.csproj",
         "projectName": "CryptoScanner.Data",
-        "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.Data\\CryptoScanner.Data.csproj",
+        "projectPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.Data\\CryptoScanner.Data.csproj",
         "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScanner\\CryptoScanner.Data\\obj\\",
+        "outputPath": "C:\\Users\\jespe\\source\\OOP2\\CryptoScannerAPI\\CryptoScanner.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jespe\\AppData\\Roaming\\NuGet\\NuGet.Config",
