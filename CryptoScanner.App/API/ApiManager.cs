@@ -11,11 +11,9 @@ namespace CryptoScanner.App.API
 {
     public class ApiManager
     {
-        public static List<CryptoModel> CryptoModels { get; set; }
-
         public string baseUrl = "https://api.coingecko.com/api/v3";
 
-        public static async Task GetStartingCrypto()
+        public static async Task<List<CryptoModel>> GetStartingCrypto()
         {
             List<CryptoModel> cryptos = new();
             ApiManager apiManager = new ApiManager();
@@ -36,12 +34,7 @@ namespace CryptoScanner.App.API
                 }
             }
 
-            CryptoModels = cryptos;
-        }
-
-        public void SortList()
-        {
-            CryptoModels = CryptoModels.OrderByDescending(x => x.current_price).ToList();
+            return cryptos;
         }
 
         public async Task<string> GetCrypto(string coinId)
@@ -66,15 +59,14 @@ namespace CryptoScanner.App.API
             }
 
             cryptoModel = cryptos.Find(x => x.id == coinId);
-            
 
             if (cryptoModel == null)
             {
-                return msg = "Bad Request!";
+                return msg = "Coin not found!";
             }
             else
             {
-                CryptoModels.Add(cryptoModel);
+                Logic.AppLogicManager.CacheCrypto(cryptoModel);
                 return msg = "Coin added!";
             }
 
