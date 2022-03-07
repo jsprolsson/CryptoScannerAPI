@@ -19,7 +19,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+await CryptoScanner.App.API.ApiManager.GetStartingCrypto();
 app.MapRazorPages();
 
 app.Run();

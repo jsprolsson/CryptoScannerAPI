@@ -4,3 +4,31 @@
     ViewData["Title"] = "Home page";
 }
 
+<form method="post">
+    <input type="text" asp-for="Id" />
+    <button type="submit">Add coin</button>
+</form>
+@if(@Model.Message != null)
+{
+    <h1>@Model.Message</h1>
+}
+
+
+<div class="row">
+
+ @foreach(var coin in Model.CryptoModelsList) {
+
+    <div class="col-sm-6 col-md-4">
+            <div class="card border-black">
+                <div class="card-header">@coin.id</div>
+                    <div class="card-body">
+                        <img src="@coin.image">
+                        <p class="card-text">Symbol: @coin.symbol</p>
+                        <p class="card-text">Current Price: <b>@coin.current_price</b></p>
+                    </div>
+                </div>
+        </div>
+  }  
+
+</div>
+

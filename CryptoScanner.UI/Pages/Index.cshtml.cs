@@ -7,14 +7,25 @@ namespace CryptoScanner.UI.Pages
 {
     public class IndexModel : PageModel
     {
-        public CryptoModel CryptoModels { get; set; } = new();
+        [BindProperty]
+        public string? Id { get; set; }
+        public string? Message { get; set; }
         public List<CryptoModel> CryptoModelsList { get; set; } = new();
 
-        public async Task OnGet()
+        public async Task OnGet(string msg)
+        {
+            Message = msg;
+            ApiManager api = new();
+            api.SortList();
+            CryptoModelsList = ApiManager.CryptoModels;
+        }
+
+        public async Task<IActionResult> OnPost()
         {
             ApiManager api = new();
-            CryptoModels = await api.GetCrypto("bitcoin");
-            CryptoModelsList = ApiManager.CryptoModels;
+           Message = await api.GetCrypto(Id);
+            return RedirectToPage("Index", new {msg = Message});
+
         }
 
     }
